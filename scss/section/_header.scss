@@ -1,0 +1,37 @@
+.header {
+    &__logo {
+        font-family: "Poppins";
+        font-size: 36px;
+        font-weight: 400;
+        background: linear-gradient(180deg, #000 0%, #666 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__list {}
+
+    &__item {}
+
+    &__link {
+        font-family: "Poppins";
+        font-size: 24px;
+        font-weight: 400;
+        background: linear-gradient(180deg, #000 0%, #666 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        transition-property: background;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover {
+        background: linear-gradient(180deg, #61F84D 0%, #39922D 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+}

@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TalkHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style/main.min.css">
 </head>
-<body>
 
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__logo">TalkHub</h1>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="./index.html" class="header__link">Home</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">About Us</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Questions</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Answers</a>
+                </li>
+                <li class="header__item"><button type="submit">Login</button></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__sphere">
+                    <h1 class="sphere__title">REGISTRATION</h1>
+                    <form action="">
+                        <label>
+                            <input type="text" name="" id="" placeholder="name" required minlength="3" maxlength="20">
+                        </label>
+                        <label>
+                            <input type="email" placeholder="email" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        </label>
+                        <label>
+                            <input type="password" placeholder="password"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" minlength="8"
+                                maxlength="20" required>
+                        </label>
+                        <label>
+                            <button type="submit">Register</button>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
 </body>
+
 </html>
