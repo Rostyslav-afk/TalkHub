@@ -1,4 +1,15 @@
 .header {
+    padding-top: 25px;
+    padding-bottom: 81px;
+    padding-right: 215px;
+    padding-left: 215px;
+
+    &>.container {
+        display: flex;
+        align-items: center;
+    }
+
+
     &__logo {
         font-family: "Poppins";
         font-size: 36px;
@@ -7,11 +18,20 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        margin-right: 129px;
     }
 
-    &__list {}
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
 
     &__item {}
+    &__item:last-child {
+        gap: 0;
+    }
 
     &__link {
         font-family: "Poppins";
@@ -22,9 +42,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        transition-property: background;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__link:hover {
@@ -33,5 +51,46 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
+    }
+
+    .active {
+        background: linear-gradient(180deg, #61F84D 0%, #39922D 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &::after {
+            content: "";
+            display: block;
+            border-radius: 2px;
+            background: #F3B021;
+            width: 72px;
+            height: 4px;
+            position: absolute;
+            top: 73px;
+            left: 488px;
+            opacity: 0;
+            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &:hover::after {
+            opacity: 1;
+          }
+    }
+
+
+    &__button {
+        color: #FFF;
+        font-family: "Poppins";
+        font-size: 24px;
+        font-weight: 400;
+        border-radius: 36px;
+        border: none;
+        background: #3A3A3A;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 61px;
+        padding-left: 61px;
+        margin-left: 120px;
     }
 }
