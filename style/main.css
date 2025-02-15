@@ -78,14 +78,29 @@ a {
 }
 
 .header {
-  padding-top: 25px;
-  padding-bottom: 81px;
-  padding-right: 215px;
-  padding-left: 215px;
+  padding-top: 19px;
+  padding-bottom: 215px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.header > .container {
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 18px;
+    padding-bottom: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 81px;
+    padding-right: 215px;
+    padding-left: 215px;
+  }
+}
+.header .box {
   display: flex;
   align-items: center;
+  gap: 129px;
 }
 .header__logo {
   font-family: "Poppins";
@@ -95,7 +110,6 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-right: 129px;
 }
 .header__list {
   display: flex;
@@ -128,22 +142,6 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.header .active::after {
-  content: "";
-  display: block;
-  border-radius: 2px;
-  background: #F3B021;
-  width: 72px;
-  height: 4px;
-  position: absolute;
-  top: 73px;
-  left: 488px;
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header .active:hover::after {
-  opacity: 1;
-}
 .header__button {
   color: #FFF;
   font-family: "Poppins";
@@ -156,5 +154,5 @@ a {
   padding-bottom: 10px;
   padding-right: 61px;
   padding-left: 61px;
-  margin-left: 120px;
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */
