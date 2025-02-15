@@ -22,7 +22,7 @@
         gap: 256px;
 
         @media screen and (min-width: 768px) {
-            gap: 64px;
+            gap: 542px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -45,7 +45,7 @@
         background: none;
         border: none;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
             display: none;
         }
     }
@@ -60,14 +60,14 @@
         display: none;
 
         @media screen and (min-width: 768px) {
-            gap: 62px;
-            display: flex;
-            align-items: center;
-             justify-content: center;
+          display: none;
         }
 
         @media screen and (min-width: 1200px) {
             gap: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -131,7 +131,7 @@
     &__button {
         display: none;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
             color: #FFF;
             font-family: "Poppins";
             font-size: 24px;

@@ -60,6 +60,7 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -104,7 +105,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .header .box {
-    gap: 64px;
+    gap: 542px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -125,7 +126,7 @@ a {
   background: none;
   border: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header .header__btn {
     display: none;
   }
@@ -140,15 +141,15 @@ a {
 }
 @media screen and (min-width: 768px) {
   .header__list {
-    gap: 62px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__list {
     gap: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .header__item:last-child {
@@ -179,7 +180,7 @@ a {
 .header__button {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header__button {
     color: #FFF;
     font-family: "Poppins";
