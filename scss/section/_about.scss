@@ -1,0 +1,38 @@
+.about {
+    background: #F8F8F8;
+    padding-top: 85px;
+    padding-bottom: 243px;
+
+    &__title {
+        color: #000;
+        font-family: "Inknut Antiqua";
+        font-size: 95px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 35px; 
+
+        @media screen and (min-width: 768px) {
+            font-size: 128px;
+            margin-bottom: 79px;
+        }
+    }
+
+    &__text {
+        color: #000;
+        font-family: "Inknut Antiqua";
+        font-size: 20px;
+        font-weight: 400;
+        width: 431px;
+        margin: 0 auto;
+        line-height: 2;
+        
+        @media screen and (min-width: 1200px) {
+            font-size: 24px;
+            width: 1170px;
+            
+        }
+        @media screen and (min-width: 768px) {
+            width: 706px;
+        }
+    }
+}

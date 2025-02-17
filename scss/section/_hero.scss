@@ -1,9 +1,5 @@
 .hero {
-    padding-bottom: 287px;
 
-    @media screen and (min-width: 768px) {
-        padding-bottom: 162px;
-    }
 
     &__sphere {
         width: 450px;

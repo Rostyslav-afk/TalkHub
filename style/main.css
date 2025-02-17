@@ -58,23 +58,24 @@ a {
 
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -198,14 +199,6 @@ a {
   }
 }
 
-.hero {
-  padding-bottom: 287px;
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-bottom: 162px;
-  }
-}
 .hero__sphere {
   width: 450px;
   height: 450px;
@@ -281,5 +274,45 @@ a {
     height: 87px;
     font-size: 36px;
     margin-top: 32px;
+  }
+}
+
+.about {
+  background: #F8F8F8;
+  padding-top: 85px;
+  padding-bottom: 243px;
+}
+.about__title {
+  color: #000;
+  font-family: "Inknut Antiqua";
+  font-size: 95px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 768px) {
+  .about__title {
+    font-size: 128px;
+    margin-bottom: 79px;
+  }
+}
+.about__text {
+  color: #000;
+  font-family: "Inknut Antiqua";
+  font-size: 20px;
+  font-weight: 400;
+  width: 431px;
+  margin: 0 auto;
+  line-height: 2;
+}
+@media screen and (min-width: 1200px) {
+  .about__text {
+    font-size: 24px;
+    width: 1170px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__text {
+    width: 706px;
   }
 }/*# sourceMappingURL=main.css.map */
